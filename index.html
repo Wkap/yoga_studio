@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Yoga Studio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/noty/3.1.2/noty.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/validator/9.2.0/validator.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/noty/3.1.2/noty.min.js"></script>
+	<script src="jquery.serializeobject.js"></script>
+	<script src="application.js"></script>
+</head>
+<body>
+
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a class="navbar-item logo" href="/yoga">
+				Yoga Studio
+			</a>
+		</div>
+		<div class="navbar-menu">
+			<div id="user-menu" class="navbar-start hidden">
+				<div class="navbar-item">
+					<a id="create-button" href="#" class="button is-primary">Add an item</a>
+				</div>
+			</div>
+			<div id="user-navbar" class="navbar-end hidden">
+				<div id="user" class="navbar-item"></div>
+				<div class="navbar-item">
+					<a id="logout-button" href="#" class="button is-primary">Logout</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+<div class="container">
+
+	<h1 class="title">Our Classes</h1>
+
+	<section id="list-section" class="section">
+		<div class="filter">
+			<h5 class="title is-5">Instructor:</h5>
+			<div class="select">
+				<select id="list-sorting" name="instructor">
+					<option value="" selected>All</option>
+					<option value="Dobre Milosh">Dobre Milosh</option>
+					<option value="Garry Cool">Garry Cool</option>
+				</select>
+			</div>
+		</div>
+		<div id="list"></div>
+	</section>
+
+	<section id="reserve-section" style="display: none;">
+		<div class="columns">
+			<div class="column is-6 is-offset-3">
+				<form id="reserve-form" class="form-wrapper form-margin">
+					<input type="hidden" name="id">
+
+					<div class="content">
+						<h1>Make a reservation</h1>
+					</div>
+
+					<div class="field">
+						<label class="label">Class Information:</label>
+						<div id="class-information"></div>
+					</div>
+
+					<div class="field">
+						<label class="label">Email</label>
+						<div class="control has-icons-left has-icons-right">
+							<input id="email" class="input is-large" type="text" placeholder="Your email" name="email">
+							<span class="icon is-small is-left">
+								<i class="fa fa-id-card-o"></i>
+							</span>
+						</div>
+						<p class="help is-danger hid error-name"></p>
+					</div>
+
+					<button type="submit" class="button is-primary is-medium">Create</button>
+					<button class="button is-medium form-cancel-button">Return to Our Classes list</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+</body>
+</html>

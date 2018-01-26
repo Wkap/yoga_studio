@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500|Open+Sans:400,700');
+
+* {
+box-sizing: border-box;
+}
+
+html {
+	font-size: 14px;
+	background: transparent;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	background: #f5f5f5;
+	font-size: 18px;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.hid {
+	display: none;
+}
+
+.navbar {
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 25px;
+}
+
+.help {
+	font-size: 18px;
+}
+
+.section {
+	padding: 0;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/* List table */
+.list-actions {
+	width: 15%;
+	text-align: right;
+}
+
+.list-date {
+	width: 30%;
+}
+.checkbox
+{
+margin-left: 1%;
+margin-right: 10%;
+}
+
+.form-wrapper {
+	border: 1px solid #e5e5e5;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.form-margin {
+	margin-top: 60px;
+}
+
+/* Filter */
+.filter {
+	font-size: 16px;
+	padding: 10px 20px;
+	margin: 10px 0;
+}
+
+tr.class-full td {
+	background: rgba(255, 136, 136, 0.3);
+}
